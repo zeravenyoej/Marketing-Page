@@ -3,4 +3,26 @@ footer {
     padding: 1.5%;
     background: #B0BEC6;
     border-radius: 10px;
+    .justify(center);
+
+    .address {
+        border: 3px solid white;
+        width: 30%;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+
+//********************* MEDIA QUERIES ***********************
+
+@media @phone {
+    footer {
+        width: 100%;
+
+        .address {
+            // display: flex;
+            width: 80%;
+        }
+    }
 }

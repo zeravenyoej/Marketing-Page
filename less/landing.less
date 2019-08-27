@@ -1,6 +1,4 @@
 //******************* HERO  ******************************
-
-
 .hero {
     .align(center);
     .direction(column);
@@ -25,7 +23,6 @@
     }
 }
 
-
 //**************************** MAIN PICS **************************
 .mainPics {
     .topPics {
@@ -34,6 +31,7 @@
 
     .topPics, .bottomPics {
         .justify(space-between);
+        .direction(row);
 
         .dashboard, .userSummary, .mainTrips, .tripSummary {
             width: 48%;
@@ -55,6 +53,10 @@
             .imgContainer {
                 .justify(center);
                 padding-top: 3%;
+
+                img {
+                    border-radius: 10px;
+                }
             }
         }
 
@@ -67,12 +69,10 @@
     }
 }
 
-
-
 //************************** TESTIMONIALS ******************************
 
 .testimonials {
-    margin-top: 6%;
+    margin-top: 5%;
     margin-bottom: 3%;
     .justify(space-between);
     background: #FFE6EA;
@@ -128,11 +128,49 @@
 
     .fourthCol {
         .speech-bubble {
-            // .justify(center);
-            // .direction(column);
             padding: 5%;
         }
     }
-    
 }
 
+
+//********************* MEDIA QUERIES ******************
+
+@media @phone {
+    .mainPics {
+        .direction(column);
+        align-content: center;
+
+        .topPics, .bottomPics {
+            width: 100%;
+
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media @phone {
+    .testimonials {
+        .direction(column);
+
+        .firstCol, .secondCol, .thirdCol, .fourthCol {
+            width: 100%;
+
+            img {
+                width: 100%;
+                margin: 5% 0;
+            }
+            
+            .speech-bubble {
+                padding: 5% 0;
+            }
+        }
+
+        .thirdCol {
+            .direction(column);
+        }
+    }
+}
