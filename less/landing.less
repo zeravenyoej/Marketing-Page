@@ -9,11 +9,11 @@
         .direction(row-reverse);
         #map {
             width: 100%;
+            border-radius: 10px;
         }
     }
 
     .heroText {
-
         p{
             width: 100%;
             text-align: center;
@@ -39,16 +39,17 @@
             width: 48%;
             .direction(column);
             padding: 2% 0;
+            border-radius: 10px;
     
             .text { 
-                // .justify(center);
-                // .align(center);
-                width: 90%;
+                margin: auto;
+                width: 60%;
                 border: 4px solid white;
                 border-radius: 10px;
 
                 p {
                     text-align: center;
+                    padding: 2.5% 0;
                 }
             }
             .imgContainer {
@@ -76,59 +77,22 @@
     .justify(space-between);
     background: #FFE6EA;
     padding: 2%;
-    
-    P {
-        text-align: center;
-    }
+    border-radius: 10px;
 
     .speech-bubble {
-        border-color: #F9FBFC;
-    }
-    
-    .strong {
-        font-weight: bold;
-    }
+        border: 4px solid #5C6070;
+        border-radius: 10px;
 
-    .firstCol {
-        width: 23%;
-        .direction(column); 
-        align-items: center;
-        img {
-            padding-top: 8%;
-        }
-    }
-
-    .secondCol {
-        width: 23%;
-        .direction(column);  
-        align-content: space-between;
-
-        .speech-bubble, .testImg {
-            height: 42%;
+        P {
+            text-align: center;
+            font-size: 1.6rem;
         }
 
-        .speech-bubble{
-            padding-top: 15%;
+        .strong {
+            font-weight: 700;
+            font-size: 1.5rem;
+            font-style: italic;
         }
-        
-    }
-    
-    .thirdCol {
-        .direction(column-reverse);
-        width: 23%;
-
-        .speech-bubble, .testImg {
-            height: 48%;
-        }
-
-        .speech-bubble{
-            padding-top: 30%;
-        }
-    }
-
-    .fourthCol {
-        width: 23%;
-        .direction(column);  
     }
 
     .testImg {
@@ -136,7 +100,39 @@
         
         img {
             width: 100%;
+            border-radius: 10px;
         }
     }
+
+    .firstCol, .secondCol, .thirdCol, .fourthCol {
+        width: 23%;
+        .direction(column);
+    }
+
+    .secondCol, .thirdCol {
+        justify-content: space-between;
+
+        .speech-bubble, .testImg {
+            height: 42%;
+        }
+
+        .speech-bubble{
+            .justify(center);
+            .direction(column);
+        }
+    }
+    
+    .thirdCol {
+        .direction(column-reverse);
+    }
+
+    .fourthCol {
+        .speech-bubble {
+            // .justify(center);
+            // .direction(column);
+            padding: 5%;
+        }
+    }
+    
 }
 
