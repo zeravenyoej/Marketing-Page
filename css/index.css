@@ -126,3 +126,109 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+nav {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5% 0;
+}
+nav .links {
+  align-items: center;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .links a {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+}
+nav .links button {
+  border-color: black;
+  border-radius: 10px;
+  padding: 4% 8%;
+}
+.hero img {
+  width: 100%;
+}
+.hero .heroDescription {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 10%;
+}
+.hero .heroDescription h1 {
+  padding-bottom: 3.5%;
+}
+.mainPics .topPics,
+.mainPics .bottomPics {
+  display: flex;
+  justify-content: space-between;
+}
+.mainPics .dashboard,
+.mainPics .userSummary,
+.mainPics .mainTrips,
+.mainPics .tripSummary {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+.mainPics .dashboard .text,
+.mainPics .userSummary .text,
+.mainPics .mainTrips .text,
+.mainPics .tripSummary .text {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.mainPics .dashboard .text p,
+.mainPics .userSummary .text p,
+.mainPics .mainTrips .text p,
+.mainPics .tripSummary .text p {
+  display: flex;
+  justify-content: center;
+}
+.mainPics .imgContainer {
+  display: flex;
+  justify-content: center;
+}
+.testimonials p {
+  width: 32%;
+}
