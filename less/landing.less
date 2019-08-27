@@ -2,53 +2,68 @@
 
 
 .hero {
+    .align(center);
+    .direction(column);
 
-    img {
-        width: 100%;
-        // max-height: 80%;
-        // height: 100%;
-    }
-
-    .heroDescription {
-        .align(center);
-        .direction(column);
-        padding: 3% 10%;
-    
-        h1 {
-            padding-bottom: 3.5%;
+    .heroImgs {
+        .direction(row-reverse);
+        #map {
+            width: 100%;
         }
     }
 
+    .heroText {
+
+        p{
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            padding: 8% 0;
+            color: #5C6070;
+        }
+    }
 }
 
 
 //**************************** MAIN PICS **************************
 .mainPics {
+    .topPics {
+        margin-bottom: 4%;
+    }
 
     .topPics, .bottomPics {
         .justify(space-between);
-    }
-    .dashboard, .userSummary, .mainTrips, .tripSummary {
-        width: 48%;
-        .direction(column);
 
-        .text { 
-            .justify(center);
-            width: 80%;
-            p {
-                // width: 80%;
+        .dashboard, .userSummary, .mainTrips, .tripSummary {
+            width: 48%;
+            .direction(column);
+            padding: 2% 0;
+    
+            .text { 
+                // .justify(center);
+                // .align(center);
+                width: 90%;
+                border: 4px solid white;
+                border-radius: 10px;
+
+                p {
+                    text-align: center;
+                }
+            }
+            .imgContainer {
                 .justify(center);
+                padding-top: 3%;
             }
         }
-    }
 
-    .imgContainer {
-        .justify(center);
+        .dashboard, .tripSummary {
+            background: #7DDFC3;
+        }
+        .userSummary, .mainTrips {
+            background: #FDB4BF;
+        }
     }
-
-//     .text {
-//         font-size: 
-//     }
 }
 
 
@@ -56,7 +71,72 @@
 //************************** TESTIMONIALS ******************************
 
 .testimonials {
-    p {
-        width: 32%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    .justify(space-between);
+    background: #FFE6EA;
+    padding: 2%;
+    
+    P {
+        text-align: center;
+    }
+
+    .speech-bubble {
+        border-color: #F9FBFC;
+    }
+    
+    .strong {
+        font-weight: bold;
+    }
+
+    .firstCol {
+        width: 23%;
+        .direction(column); 
+        align-items: center;
+        img {
+            padding-top: 8%;
+        }
+    }
+
+    .secondCol {
+        width: 23%;
+        .direction(column);  
+        align-content: space-between;
+
+        .speech-bubble, .testImg {
+            height: 42%;
+        }
+
+        .speech-bubble{
+            padding-top: 15%;
+        }
+        
+    }
+    
+    .thirdCol {
+        .direction(column-reverse);
+        width: 23%;
+
+        .speech-bubble, .testImg {
+            height: 48%;
+        }
+
+        .speech-bubble{
+            padding-top: 30%;
+        }
+    }
+
+    .fourthCol {
+        width: 23%;
+        .direction(column);  
+    }
+
+    .testImg {
+        .justify(center);
+        
+        img {
+            width: 100%;
+        }
     }
 }
+

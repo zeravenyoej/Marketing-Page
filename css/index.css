@@ -171,7 +171,7 @@ nav {
 }
 nav .links {
   align-items: center;
-  width: 30%;
+  width: 20%;
   display: flex;
   justify-content: space-between;
 }
@@ -185,50 +185,159 @@ nav .links button {
   border-radius: 10px;
   padding: 4% 8%;
 }
-.hero img {
-  width: 100%;
+footer {
+  margin: 3% 0;
+  padding: 1.5%;
+  background: #B0BEC6;
+  border-radius: 10px;
 }
-.hero .heroDescription {
+.hero {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 3% 10%;
 }
-.hero .heroDescription h1 {
-  padding-bottom: 3.5%;
+.hero .heroImgs {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.hero .heroImgs #map {
+  width: 100%;
+}
+.hero .heroText p {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 8% 0;
+  color: #5C6070;
+}
+.mainPics .topPics {
+  margin-bottom: 4%;
 }
 .mainPics .topPics,
 .mainPics .bottomPics {
   display: flex;
   justify-content: space-between;
 }
-.mainPics .dashboard,
-.mainPics .userSummary,
-.mainPics .mainTrips,
-.mainPics .tripSummary {
+.mainPics .topPics .dashboard,
+.mainPics .bottomPics .dashboard,
+.mainPics .topPics .userSummary,
+.mainPics .bottomPics .userSummary,
+.mainPics .topPics .mainTrips,
+.mainPics .bottomPics .mainTrips,
+.mainPics .topPics .tripSummary,
+.mainPics .bottomPics .tripSummary {
   width: 48%;
   display: flex;
   flex-direction: column;
+  padding: 2% 0;
 }
-.mainPics .dashboard .text,
-.mainPics .userSummary .text,
-.mainPics .mainTrips .text,
-.mainPics .tripSummary .text {
+.mainPics .topPics .dashboard .text,
+.mainPics .bottomPics .dashboard .text,
+.mainPics .topPics .userSummary .text,
+.mainPics .bottomPics .userSummary .text,
+.mainPics .topPics .mainTrips .text,
+.mainPics .bottomPics .mainTrips .text,
+.mainPics .topPics .tripSummary .text,
+.mainPics .bottomPics .tripSummary .text {
+  width: 90%;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+.mainPics .topPics .dashboard .text p,
+.mainPics .bottomPics .dashboard .text p,
+.mainPics .topPics .userSummary .text p,
+.mainPics .bottomPics .userSummary .text p,
+.mainPics .topPics .mainTrips .text p,
+.mainPics .bottomPics .mainTrips .text p,
+.mainPics .topPics .tripSummary .text p,
+.mainPics .bottomPics .tripSummary .text p {
+  text-align: center;
+}
+.mainPics .topPics .dashboard .imgContainer,
+.mainPics .bottomPics .dashboard .imgContainer,
+.mainPics .topPics .userSummary .imgContainer,
+.mainPics .bottomPics .userSummary .imgContainer,
+.mainPics .topPics .mainTrips .imgContainer,
+.mainPics .bottomPics .mainTrips .imgContainer,
+.mainPics .topPics .tripSummary .imgContainer,
+.mainPics .bottomPics .tripSummary .imgContainer {
   display: flex;
   justify-content: center;
-  width: 80%;
+  padding-top: 3%;
 }
-.mainPics .dashboard .text p,
-.mainPics .userSummary .text p,
-.mainPics .mainTrips .text p,
-.mainPics .tripSummary .text p {
+.mainPics .topPics .dashboard,
+.mainPics .bottomPics .dashboard,
+.mainPics .topPics .tripSummary,
+.mainPics .bottomPics .tripSummary {
+  background: #7DDFC3;
+}
+.mainPics .topPics .userSummary,
+.mainPics .bottomPics .userSummary,
+.mainPics .topPics .mainTrips,
+.mainPics .bottomPics .mainTrips {
+  background: #FDB4BF;
+}
+.testimonials {
+  margin-top: 6%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  background: #FFE6EA;
+  padding: 2%;
+}
+.testimonials P {
+  text-align: center;
+}
+.testimonials .speech-bubble {
+  border-color: #F9FBFC;
+}
+.testimonials .strong {
+  font-weight: bold;
+}
+.testimonials .firstCol {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials .firstCol img {
+  padding-top: 8%;
+}
+.testimonials .secondCol {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.testimonials .secondCol .speech-bubble,
+.testimonials .secondCol .testImg {
+  height: 42%;
+}
+.testimonials .secondCol .speech-bubble {
+  padding-top: 15%;
+}
+.testimonials .thirdCol {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 23%;
+}
+.testimonials .thirdCol .speech-bubble,
+.testimonials .thirdCol .testImg {
+  height: 48%;
+}
+.testimonials .thirdCol .speech-bubble {
+  padding-top: 30%;
+}
+.testimonials .fourthCol {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+}
+.testimonials .testImg {
   display: flex;
   justify-content: center;
 }
-.mainPics .imgContainer {
-  display: flex;
-  justify-content: center;
-}
-.testimonials p {
-  width: 32%;
+.testimonials .testImg img {
+  width: 100%;
 }
