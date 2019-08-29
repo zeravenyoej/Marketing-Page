@@ -312,6 +312,7 @@ footer .address {
 .mainPics .bottomPics .tripSummary .text p {
   text-align: center;
   padding: 2.5% 0;
+  font-weight: 900;
 }
 .mainPics .topPics .dashboard .imgContainer,
 .mainPics .bottomPics .dashboard .imgContainer,
@@ -419,6 +420,15 @@ footer .address {
 .testimonials .thirdCol {
   display: flex;
   flex-direction: column-reverse;
+}
+.testimonials .fourthCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .fourthCol .speech-bubble {
+  width: 90%;
+  padding: 7% 5%;
 }
 @media (max-width: 500px) {
   .mainPics {
