@@ -79,57 +79,53 @@
     padding: 2%;
     border-radius: 10px;
 
-    .speech-bubble {
-        border: 4px solid #5C6070;
-        border-radius: 10px;
-
-        P {
-            text-align: center;
-            font-size: 1.6rem;
-        }
-
-        .strong {
-            font-weight: 700;
-            font-size: 1.5rem;
-            font-style: italic;
-        }
-    }
-
-    .testImg {
-        .justify(center);
-        
-        img {
-            width: 100%;
-            border-radius: 10px;
-        }
-    }
-
     .firstCol, .secondCol, .thirdCol, .fourthCol {
         width: 23%;
         .direction(column);
-    }
-
-    .secondCol, .thirdCol {
-        justify-content: space-between;
-
-        .speech-bubble, .testImg {
-            height: 42%;
-        }
 
         .speech-bubble{
             .justify(center);
             .direction(column);
+            text-align: center;
+            padding: 1%;
+            border: 4px solid #5C6070;
+            border-radius: 10px;
+
+            P {
+                text-align: center;
+                font-size: 1.6rem;
+            }
+    
+            .strong {
+                font-weight: 700;
+                font-size: 1.5rem;
+                font-style: italic;
+            }
+        }
+        .testImg {
+            .justify(center);
+            
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    // .firstCol {
+    //     .justify(center);
+    // }
+
+    .secondCol, .thirdCol {
+        .justify(space-between);
+
+        .speech-bubble, .testImg {
+            height: 42%;
         }
     }
     
     .thirdCol {
         .direction(column-reverse);
-    }
-
-    .fourthCol {
-        .speech-bubble {
-            padding: 5%;
-        }
     }
 }
 
@@ -160,14 +156,18 @@
             width: 100%;
 
             img {
-                width: 100%;
                 margin: 5% 0;
             }
             
             .speech-bubble {
-                padding: 5% 0;
+                padding: 5% 1%;
             }
         }
+
+        // .firstCol {
+        //     .justify(center);
+
+        // }
 
         .thirdCol {
             .direction(column);
