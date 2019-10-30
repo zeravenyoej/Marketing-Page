@@ -1,0 +1,59 @@
+nav {
+    .direction(row);
+    .justify(space-between);
+    padding: 2.5% 0;
+
+    .links {
+        .align(center);
+        width: 35%;
+        .justify(space-between);
+
+        a {
+            font-size: 2rem;
+            color: @nav-font;
+            text-decoration: none;
+        }
+        
+        button {
+            border-color: black;
+            border-radius: 10px;
+            padding: 4% 8%;
+            background: #E7F0FE;
+
+            &:hover {
+                background: #6DA4F8;
+            }
+
+            a {
+                &:hover {
+                    color:white;
+                }
+            }
+        }
+    }
+}
+
+
+//********************* MEDIA QUERIES ******************
+
+@media @phone {
+    nav {
+        .direction(column);
+        .align(center);
+
+        .links {
+            .direction(column);
+            padding-top: 2%;
+            width: 100%;
+            
+            a, button {
+                margin: 1%;
+            }
+
+            button {
+                width: 40%;
+                padding: 1.5% 2%;
+            }
+        }
+    }
+}
